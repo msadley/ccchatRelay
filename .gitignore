@@ -1,0 +1,12 @@
+# npm local packages
+/node_modules
+
+# npm lock files
+package-lock.json
+
+# ts build artifacts
+/dist
+
+# instace-specific files
+/config
+/log

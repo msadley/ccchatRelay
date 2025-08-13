@@ -1,0 +1,27 @@
+{
+  "name": "ccchat-relay",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc --build",
+    "start": "node dist/index.js",
+    "dev": "npm install && npm run build && npm run start",
+    "watch": "npx tsc --watch"
+  },
+  "author": "Adley Silva Mendes",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@chainsafe/libp2p-noise": "^16.1.4",
+    "@chainsafe/libp2p-yamux": "^7.0.4",
+    "@libp2p/circuit-relay-v2": "^3.2.23",
+    "@libp2p/identify": "^3.0.38",
+    "@libp2p/websockets": "^9.2.18",
+    "app-root-path": "^3.1.0",
+    "libp2p": "^2.9.0"
+  }
+}
