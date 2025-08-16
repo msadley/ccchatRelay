@@ -10,3 +10,6 @@ package-lock.json
 # instace-specific files
 /config
 /log
+
+# Public Server DNS
+vars.env
