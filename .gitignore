@@ -11,5 +11,5 @@ package-lock.json
 /config
 /log
 
-# Public Server DNS
-vars.env
+# Environment Variables
+.env

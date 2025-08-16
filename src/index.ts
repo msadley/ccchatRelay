@@ -1,5 +1,6 @@
 // src/index.ts
 
+import 'dotenv/config';
 import { Server } from './network/server.js';
 
 const server : Server = await Server.init();
