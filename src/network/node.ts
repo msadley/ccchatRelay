@@ -6,6 +6,7 @@ import { circuitRelayServer } from "@libp2p/circuit-relay-v2";
 import { identify } from "@libp2p/identify";
 import { webSockets } from "@libp2p/websockets";
 import { createLibp2p, type Libp2p } from "libp2p";
+import { autoNAT } from "@libp2p/autonat";
 import { getPrivateKey } from "../util/util.js";
 import type { Multiaddr } from "@multiformats/multiaddr";
 import { log } from "../util/log.js";
@@ -44,6 +45,7 @@ export class Node {
       services: {
         identify: identify(),
         relay: circuitRelayServer(),
+        autoNAT: autoNAT(),
       },
     });
     return new Node(node);
